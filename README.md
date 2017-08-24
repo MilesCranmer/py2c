@@ -1,6 +1,17 @@
 # py2c
 Python to C converter, using numba, LLVM, and LLVM-CBE
 
+## Why?
+
+Python is quick and easy. You can get the same speed as C with Python's Numba, but if you are working
+on legacy code, it is expensive to call out to Python.
+
+Solution: mock up a function quickly inside Python,
+then convert it to C and dump it into your legacy code.
+
+
+## Example
+
 Input to Numba:
 
 ```
